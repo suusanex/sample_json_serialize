@@ -1,7 +1,7 @@
 # sample_json_serialize
 Code experimenting with several cases of serialization deserialization using JSON.NET.
 
-バージョンアップでクラスに変更が入った場合、古いバージョンの文字列を新しいバージョンのクラスへデシリアライズできるかどうかの実験。
+バージョンアップでクラスに変更が入った場合、古いバージョンの文字列を新しいバージョンのクラスへデシリアライズできるかどうかの実験。.NET 4.5.2 + Newtonsoft.Json 12.0.2 を使用。
 
 変数の追加：デシリアライズ成功。追加された変数は、new時のデフォルト値となった
 
