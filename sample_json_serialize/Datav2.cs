@@ -17,5 +17,6 @@ namespace sample_json_serialize
         public int data3 = 18;
         public List<string> data2 = new List<string>{"xx", "yy"};
         public Datav2Child child2;
+        public byte[] bytedata;
     }
 }

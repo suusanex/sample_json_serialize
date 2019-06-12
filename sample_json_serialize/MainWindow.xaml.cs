@@ -40,14 +40,15 @@ namespace sample_json_serialize
                         dataChild1 = 2
                     },
                     data1 = 3,
-                    data2 = new List<string> {"1", "2"}
+                    data2 = new List<string> {"1", "2"},
+                    bytedata = new byte[] { 0x1, 0x2, 0xF }
                 };
 
             var v1str = JsonConvert.SerializeObject(v1);
 
             var v2 = JsonConvert.DeserializeObject<Datav2>(v1str);
 
-            MessageBox.Show($"{nameof(v2.data3)}={v2.data3},{nameof(v2.child2.dataChild1)}={v2.child2?.dataChild1},{nameof(v2.data2)}={string.Join(",", v2.data2)}");
+            MessageBox.Show($"{nameof(v2.data3)}={v2.data3},{nameof(v2.child2.dataChild1)}={v2.child2?.dataChild1},{nameof(v2.data2)}={string.Join(",", v2.data2)},{nameof(v2.bytedata)}={BitConverter.ToString(v2.bytedata)}");
 
 
         }
